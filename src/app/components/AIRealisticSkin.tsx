@@ -1,0 +1,69 @@
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import slider_replacement from "@/app/assets/slider_replacement.png";
+
+export default function RealisticSkinAd() {
+  return (
+    <div className="mx-4 sm:mx-[10%] lg:mx-[20%] border-2 border-white bg-black bg-opacity-50 backdrop-blur-sm font-poppins">
+      <div className="font-bold text-3xl sm:text-4xl md:text-5xl text-white m-2 text-center">HOT FEATURES</div>
+      <hr className="h-px bg-white border-2" />
+      
+      <div className="flex flex-col md:flex-row">
+        {/* Image Section */}
+        <div className="w-full md:w-1/2 p-4 mt-2 sm:mt-4 md:mt-6">
+          <Image 
+            src={slider_replacement} 
+            alt="AI Realistic Skin" 
+            className="w-full h-auto object-cover"
+            width={600}
+            height={600}
+          />
+        </div>
+        
+        <div className="hidden md:block w-px bg-white m-0 p-0"></div>
+
+        {/* Text Section */}
+        <div className="w-full md:w-1/2 flex flex-col">
+          <div className="p-4 sm:p-6">
+            <p className="uppercase text-white text-xs sm:text-sm mb-1 sm:mb-2">
+              No more Plastic AI Skin
+            </p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-white">
+              AI Realistic Skin
+            </h1>
+          </div>
+          
+          <hr className="border border-white" />
+          
+          <div className="flex flex-1">
+            <div className="w-5/7 p-4 sm:p-6 text-white">
+              <p className="text-lg sm:text-xl md:text-2xl">
+                Skip the boring AI plastic skins and connect with your target audience on a personal level, with our crafted tool. Perfect for Cosmetics and Skincare brands.
+              </p>
+            </div>
+            
+            {/* This is the vertical line that was missing - made visible on all screens */}
+            <div className="w-px bg-white"></div>
+            
+            <div className="w-2/7 relative overflow-hidden">
+              <div 
+                className="absolute inset-0"
+                style={{ 
+                  background: `repeating-linear-gradient(
+                    -45deg,
+                    transparent,
+                    transparent 20px,
+                    white 20px,
+                    white 21px
+                  )`
+                }}
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

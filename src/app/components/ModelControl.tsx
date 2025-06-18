@@ -1,0 +1,65 @@
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import model_control from "@/app/assets/model_control.png";
+
+export default function ModelControl() {
+  return (
+    <div className="mx-4 sm:mx-[10%] lg:mx-[20%] border-2 border-white bg-black bg-opacity-50 backdrop-blur-sm font-poppins mb-4">
+      <div className="flex flex-col md:flex-row">
+        <div className="w-full md:w-1/2 align-center p-4 mt-2 sm:mt-4 md:mt-6">
+          <Image 
+            src={model_control} 
+            alt="Model Control" 
+            className="w-full h-auto object-cover max-w-[500px] mx-auto"
+            width={600}
+            height={600}
+          />
+        </div>
+        
+        {/* Vertical divider - visible on all screens */}
+        <div className="w-px bg-white mx-4 md:mx-0"></div>
+
+        <div className="w-full md:w-1/2 flex flex-col">
+          <div className="p-4 sm:p-6">
+            <p className="uppercase text-white text-xs sm:text-sm mb-1 sm:mb-2">
+              Be Independent
+            </p>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-white">
+              Model Controls
+            </h1>
+          </div>
+          <hr className="border border-white" />
+          <div className="flex flex-1">
+            <div className="w-5/7 p-4 sm:p-6 text-white">
+              <p className="text-lg sm:text-xl md:text-2xl space-y-2 sm:space-y-4">
+                → Clone yourself. <br/><br/>
+                → Control Pose and Expressions as per the guidelines.<br/><br/>
+                → Create exceptional results from Prompts
+              </p>
+            </div>
+            
+            {/* Vertical divider - visible on all screens */}
+            <div className="w-px bg-white"></div>
+            
+            <div className="w-2/7 relative overflow-hidden">
+              <div 
+                className="absolute inset-0"
+                style={{ 
+                  background: `repeating-linear-gradient(
+                    -45deg,
+                    transparent,
+                    transparent 20px,
+                    white 20px,
+                    white 21px
+                  )`
+                }}
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
