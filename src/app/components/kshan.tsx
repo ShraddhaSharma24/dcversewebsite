@@ -3,10 +3,12 @@
 import React from "react";
 import Image from "next/image";
 import kshan from "@/app/assets/kshan.png";
-import { Poppins } from "next/font/google";
+
 import { Instagram } from 'lucide-react';
 
 export default function Kshan() {
+
+
   return (
     <div className="mx-4 sm:mx-[10%] lg:mx-[20%] border-2 border-white bg-black bg-opacity-50 backdrop-blur-sm font-poppins text-white mt-10">
       <div className="font-bold text-xl sm:text-2xl md:text-3xl text-white m-2 text-center">OUR VIRTUAL HUMANS</div>
@@ -33,7 +35,7 @@ export default function Kshan() {
           <hr className="h-px bg-white border-0" />
           
           <p className="text-xl sm:text-2xl md:text-3xl mt-4 md:mt-6 font-semibold mb-4 px-4 md:ml-8 md:mr-8 text-center md:text-left">
-            Your guide to sustainable men's style. Curating eco-conscious looks that turn heads.
+            Your guide to sustainable men&apos;s style. Curating eco-conscious looks that turn heads.
           </p>
           
           <div className="flex gap-3 sm:gap-4 mb-4 mt-4 justify-center md:justify-start md:ml-8">

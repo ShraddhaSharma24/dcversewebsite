@@ -4,7 +4,14 @@ import React from "react";
 import Image from "next/image";
 import try_on from "@/app/assets/try_on.png";
 
+import { SplitText } from "@/components/split-text";
+
 export default function AiTryOn() {
+   
+   const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+
+};
   return (
     <div className="mx-4 sm:mx-[10%] lg:mx-[20%] border-2 border-white bg-black bg-opacity-50 backdrop-blur-sm font-poppins">
       <div className="flex flex-col md:flex-row">
@@ -26,9 +33,20 @@ export default function AiTryOn() {
             <p className="uppercase text-white text-xs sm:text-sm mb-1 sm:mb-2">
               No more expensive physical Shoots
             </p>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-white">
+            {/* <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-white">
               AI Product Try Ons
-            </h1>
+            </h1> */}
+            <SplitText
+        text="AI TRY ONS"
+        className="text-2xl md:text-4xl lg:text-4xl font-bold text-center text-white ml-[5%] lg:ml-[10%]"
+        delay={50}
+        animationFrom={{ opacity: 0, transform: 'translate3d(0, 30px, 0)' }} 
+        animationTo={{ opacity: 1, transform: 'translate3d(0, 0, 0)' }}
+        
+        threshold={0.3} 
+        rootMargin="-100px"
+        onLetterAnimationComplete={handleAnimationComplete}
+      />
           </div>
 
           <hr className="border border-white" />

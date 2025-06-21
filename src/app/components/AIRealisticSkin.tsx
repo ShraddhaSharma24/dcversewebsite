@@ -3,11 +3,29 @@
 import React from "react";
 import Image from "next/image";
 import slider_replacement from "@/app/assets/slider_replacement.png";
+import { SplitText } from "@/components/split-text";
 
 export default function RealisticSkinAd() {
+  
+   const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+
+};
   return (
     <div className="mx-4 sm:mx-[10%] lg:mx-[20%] border-2 border-white bg-black bg-opacity-50 backdrop-blur-sm font-poppins">
-      <div className="font-bold text-3xl sm:text-4xl md:text-5xl text-white m-2 text-center">HOT FEATURES</div>
+      <div className="p-4">
+      <SplitText
+        text="OUR FEATURES"
+        className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center ml-[10%] lg:ml-[35%]"
+        delay={50}
+        animationFrom={{ opacity: 0, transform: 'translate3d(0, 30px, 0)' }} 
+        animationTo={{ opacity: 1, transform: 'translate3d(0, 0, 0)' }}
+
+        threshold={0.3} 
+        rootMargin="-100px"
+        onLetterAnimationComplete={handleAnimationComplete}
+      />
+      </div>
       <hr className="h-px bg-white border-2" />
       
       <div className="flex flex-col md:flex-row">
@@ -30,9 +48,19 @@ export default function RealisticSkinAd() {
             <p className="uppercase text-white text-xs sm:text-sm mb-1 sm:mb-2">
               No more Plastic AI Skin
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-white">
-              AI Realistic Skin
-            </h1>
+            
+            {/* Typewriter Effect Here */}
+            <SplitText
+        text="AI REALISTIC SKIN"
+        className="text-2xl md:text-4xl lg:text-4xl font-bold text-white text-center ml-[5%] lg:ml-[10%]"
+        delay={50}
+        animationFrom={{ opacity: 0, transform: 'translate3d(0, 30px, 0)' }} 
+        animationTo={{ opacity: 1, transform: 'translate3d(0, 0, 0)' }}
+       
+        threshold={0.3} 
+        rootMargin="-100px"
+        onLetterAnimationComplete={handleAnimationComplete}
+      />
           </div>
           
           <hr className="border border-white" />

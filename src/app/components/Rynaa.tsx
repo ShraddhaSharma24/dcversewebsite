@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import rynaa from "@/app/assets/rynaa.png";
-import { Poppins } from "next/font/google";
+
 import { Instagram, Youtube } from 'lucide-react';
 
 export default function Rynaa() {

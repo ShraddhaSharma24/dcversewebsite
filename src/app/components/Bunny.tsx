@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import bunny from "@/app/assets/bunny.png";
-import { Poppins } from "next/font/google";
+
 import { Instagram } from 'lucide-react';
 import { Youtube} from 'lucide-react';
 

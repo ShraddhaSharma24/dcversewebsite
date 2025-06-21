@@ -25,7 +25,7 @@ function Form() {
           <textarea
             placeholder="Purpose"
             aria-label="Purpose"
-            rows="4"
+            rows={4}
             className="p-2 text-sm sm:text-base bg-black border border-gray-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all hover:shadow-[4px_0_10px_0_rgba(0,255,255,0.3)]"
           ></textarea>
 
