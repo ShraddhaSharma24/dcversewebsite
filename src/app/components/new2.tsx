@@ -52,7 +52,7 @@ export default function FashionInfluencers() {
             </div>
             <div className="flex items-center gap-2 mt-1 mb-1">
               <span className="font-medium">Embrace Your Inner Winston</span>
-              <Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" />
+              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank"><Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
             </div>
           </div>
 
@@ -76,8 +76,8 @@ export default function FashionInfluencers() {
             </p>
             <div className="flex items-center gap-2 mt-1 mb-4">
               <span className="font-medium text-lg">Shine Like Perfora!</span>
-              <Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" />
-              <Youtube className="w-6 h-6 hover:scale-110 transition-transform duration-300 ease-in-out" />
+             <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer"> <Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
+              
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function FashionInfluencers() {
            
             <div className="flex items-center gap-2 mt-1 mb-4">
               <span className="font-medium text-lg">Embrace Your Inner Winston</span>
-              <Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" />
+              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank" rel="noopener noreferrer"><Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
             </div>
           </div>
 
@@ -142,8 +142,8 @@ export default function FashionInfluencers() {
             </div>
             <div className="flex items-center gap-2 mt-1 mb-1">
               <span className="font-medium">Shine Like Perfora!</span>
-              <Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" />
-              <Youtube className="w-6 h-6 hover:scale-110 transition-transform duration-300 ease-in-out" />
+              <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer"><Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
+              
             </div>
           </div>
         </div>

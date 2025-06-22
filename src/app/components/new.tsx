@@ -70,7 +70,7 @@ export default function VirtualHumans() {
             </p>
             <div className="flex items-center gap-2 mt-2 mb-1">
               <span className="font-medium">Tap in to my style game!</span>
-              <Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" />
+             <a href="https://www.instagram.com/kshan_lifestyle/" target="_blank"> <Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
             </div>
           </div>
 
@@ -95,8 +95,8 @@ export default function VirtualHumans() {
             </p>
             <div className="flex items-center gap-2 mt-2 mb-4">
               <span className="font-medium text-lg">Tap in to my style game!</span>
-              <Instagram className="w-6 h-6 hover:scale-110 transition-transform duration-300 ease-in-out" />
-              <Youtube className="w-7 h-7 hover:scale-110 transition-transform duration-300 ease-in-out" />
+             <a href="https://www.instagram.com/rynaa_lifestyle" target="_blank"> <Instagram className="w-6 h-6 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
+              <a href="https://www.youtube.com/@RynaaLifestyle" target="_blank"><Youtube className="w-7 h-7 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@ export default function VirtualHumans() {
             </p>
             <div className="flex items-center gap-2 mt-2 mb-4">
               <span className="font-medium text-lg">Tap in to my style game!</span>
-              <Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" />
+              <a href="https://www.instagram.com/kshan_lifestyle/" target="_blank"><Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
             </div>
           </div>
 
@@ -160,8 +160,8 @@ export default function VirtualHumans() {
             </p>
             <div className="flex items-center gap-2 mt-2 mb-1">
               <span className="font-medium">Unlock My Vision</span>
-              <Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" />
-              <Youtube className="w-6 h-6 hover:scale-110 transition-transform duration-300 ease-in-out" />
+             <a href="https://www.instagram.com/rynaa_lifestyle" target="_blank">  <Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" /> </a>
+              <a href="https://www.youtube.com/@RynaaLifestyle" target="_blank"><Youtube className="w-6 h-6 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
             </div>
           </div>
         </div>
