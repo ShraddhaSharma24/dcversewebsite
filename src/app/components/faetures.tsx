@@ -1,6 +1,7 @@
 "use client";
 
-import {SplitText} from "@/components/split-text";
+// import {SplitText} from "@/components/split-text";
+import { TypewriterEffect } from "@/app/components/TypeWriter";
 
 function Features() {
   const features = [
@@ -23,8 +24,8 @@ function Features() {
   return (
     <div className="bg-black text-white mx-4 sm:mx-[10%] lg:mx-[20%] border-2 border-white mb-0">
       {/* Features Section */}
-      <div className="p-4">
-      <SplitText
+      <div >
+      {/* <SplitText
         text="OUR FEATURES"
         className="text-2xl md:text-4xl lg:text-4xl font-bold text-center text-white ml-[5%] lg:ml-[35%] "
         delay={50}
@@ -34,7 +35,13 @@ function Features() {
         threshold={0.3} 
         rootMargin="-100px"
         onLetterAnimationComplete={handleAnimationComplete}
-      />
+      /> */} 
+      <div className="flex items-center w-full  justify-center text-center">
+        <TypewriterEffect
+          words={[{ text: "MEASURABLE" }, { text: "RESULTS" }]}
+          className="text-2xl md:text-3xl text-center lg:text-4xl font-bold text-white text-center p-4"
+        />
+      </div>
       </div>
       <hr className="h-px bg-white border-0" />
       <div className="flex flex-col md:flex-row gap-4 sm:gap-6 md:gap-10 p-4 sm:p-6 md:p-10 mb-6 sm:mb-10">

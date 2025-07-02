@@ -4,7 +4,8 @@ import React from "react";
 import Image from "next/image";
 import model_control from "@/app/assets/model_control.png";
 
-import { SplitText } from "@/components/split-text";
+// import { SplitText } from "@/components/split-text";  
+import { TypewriterEffect } from "@/app/components/TypeWriter";
 
 export default function ModelControl() {
   
@@ -36,7 +37,7 @@ export default function ModelControl() {
             {/* <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-white">
               Model Controls
             </h1> */}
-            <SplitText
+            {/* <SplitText
         text="MODEL CONTROL"
         className="text-2xl md:text-4xl lg:text-4xl font-bold text-white text-center ml-[5%] lg:ml-[8%]"
         delay={50}
@@ -46,8 +47,12 @@ export default function ModelControl() {
         threshold={0.3} 
         rootMargin="-100px"
         onLetterAnimationComplete={handleAnimationComplete}
-      />
-          </div>
+      /> */}
+      <TypewriterEffect
+          words={[{ text: "MODEL" }, { text: "CONTROL" }]}
+          className="text-2xl md:text-4xl lg:text-4xl font-bold text-white text-center ml-[5%] lg:ml-[8%]"
+        />
+        </div>
           <hr className="border border-white" />
           <div className="flex flex-1">
             <div className="w-5/7 p-4 sm:p-6 text-white">

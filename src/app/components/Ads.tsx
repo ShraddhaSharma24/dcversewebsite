@@ -1,11 +1,12 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import ad1 from "@/app/assets/ad1.png";
-import ad2 from "@/app/assets/ad2.png";
-import ad3 from "@/app/assets/ad3.png";
-import ad4 from "@/app/assets/ad4.png";
-import { SplitText } from "@/components/split-text";
+// import ad1 from "@/app/assets/ad1.png";
+// import ad2 from "@/app/assets/ad2.png";
+// import ad3 from "@/app/assets/ad3.png";
+// import ad4 from "@/app/assets/ad4.png";
+// import { SplitText } from "@/components/split-text";
+import { TypewriterEffect } from "@/app/components/TypeWriter";
 import Image from "next/image";
 
 const ads = [
@@ -15,6 +16,7 @@ const ads = [
   { id: 4, url: "https://www.youtube.com/embed/ZPtGxEFbMDs?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0" },
 ];
 
+const words=["OUR", "ADVERTISEMENT"];
 export default function AdsSection() {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -47,17 +49,12 @@ export default function AdsSection() {
     <div className="bg-black overflow-hidden mt-4 h-full">
       <div className="mx-4 sm:mx-[10%] lg:mx-[20%] bg-black border border-white shadow-lg h-full ">
         <div className="p-4">
-        <SplitText
-          text="OUR ADVERTISEMENT"
-          className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-white sm: ml-[10%] lg:ml-[30%]"
-          delay={50}
-          textAlign="center"
-          animationFrom={{ opacity: 0, transform: "translate3d(0, 30px, 0)" }}
-          animationTo={{ opacity: 1, transform: "translate3d(0, 0, 0)" }}
-          threshold={0.3}
-          rootMargin="-100px"
-          onLetterAnimationComplete={handleAnimationComplete}
-        />
+          <div className="flex justify-center items-center w-full">
+            <TypewriterEffect
+              words={[{ text: "OUR" }, { text: "ADVERTISEMENT" }]}
+              className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center"
+            />
+          </div>
         </div>
         <hr className="h-px bg-white border-0" />
         <div

@@ -27,8 +27,8 @@ export default function Rynaa() {
             <div className="text-xl sm:text-2xl text-white mr-3 sm:mr-4">
               Unlock My Vision
             </div>
-            <Instagram className="w-7 h-7 sm:w-8 sm:h-8 ml-1 sm:ml-2 text-white hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <Youtube className="w-8 h-8 sm:w-10 sm:h-10 ml-1 sm:ml-2 text-white hover:scale-110 transition-transform duration-300 ease-in-out" />
+            <Instagram className="w-9 h-9 sm:w-10 sm:h-10 ml-1 sm:ml-2 text-white hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)]" />
+            <Youtube className="w-10 h-10 sm:w-11 sm:h-11 ml-1 sm:ml-2 text-white hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)]" />
           </div>
         </div>
         

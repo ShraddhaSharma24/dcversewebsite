@@ -6,7 +6,8 @@ import nadia from "@/app/assets/nadia.png";
 import bunny from "@/app/assets/bunny.png";
 import { Instagram, Youtube } from "lucide-react";
 
-import { SplitText } from "@/components/split-text";
+// import { SplitText } from "@/components/split-text";
+import { TypewriterEffect } from "@/app/components/TypeWriter";
 
 export default function FashionInfluencers() {
    
@@ -32,7 +33,7 @@ export default function FashionInfluencers() {
 
           {/* Mobile: Nadia Text */}
           <div className="flex flex-col items-center text-center md:hidden p-3">
-           <SplitText
+           {/* <SplitText
         text="NADIA"
         className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[10%]"
         delay={50}
@@ -42,7 +43,11 @@ export default function FashionInfluencers() {
         threshold={0.3} 
         rootMargin="-100px"
         onLetterAnimationComplete={handleAnimationComplete}
-      />
+      /> */}
+      <TypewriterEffect
+          words={[{ text: "NADIA" }]}
+          className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[10%]"
+        />
             <hr className="h-px w-full bg-white border-0 my-1" />
             <p className="text-sm md:text-xl font-medium leading-relaxed">
               Elevating everyday elegance into extraordinary statements, one meticulously curated look at a time.
@@ -52,14 +57,14 @@ export default function FashionInfluencers() {
             </div>
             <div className="flex items-center gap-2 mt-1 mb-1">
               <span className="font-medium">Embrace Your Inner Winston</span>
-              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank"><Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
+              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank"><Instagram className="w-7 h-7 sm:w-8 sm:h-8 hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)] text-white" /></a>
             </div>
           </div>
 
           {/* Desktop: Bunny Text */}
           <div className="hidden md:flex flex-col items-center text-center ">
             {/* <h1 className="text-3xl md:text-4xl font-bold mb-1 p-2">BUNNY</h1> */}
-            <SplitText
+            {/* <SplitText
         text="BUNNY"
         className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[10%]"
         delay={50}
@@ -69,14 +74,18 @@ export default function FashionInfluencers() {
         threshold={0.3} 
         rootMargin="-100px"
         onLetterAnimationComplete={handleAnimationComplete}
-      />
+      /> */}
+      <TypewriterEffect
+          words={[{ text: "BUNNY" }]}
+          className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[10%]"
+        />
             <hr className="h-px w-full bg-white border-0 my-1" />
             <p className="text-base md:text-xl font-medium leading-relaxed p-2">
               Bringing sunshine and smiles to every outfit, because fashion should always be fun!
             </p>
             <div className="flex items-center gap-2 mt-1 mb-4">
               <span className="font-medium text-lg">Shine Like Perfora!</span>
-             <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer"> <Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
+             <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer"> <Instagram className="w-7 h-7 sm:w-8 sm:h-8 hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)] text-white" /></a>
               
             </div>
           </div>
@@ -86,7 +95,7 @@ export default function FashionInfluencers() {
         <div className="flex flex-col">
           {/* Desktop: Nadia Text */}
           <div className="hidden md:flex flex-col items-center text-center border-b border-white ">
-           <SplitText
+           {/* <SplitText
         text="NADIA"
         className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[10%]"
         delay={50}
@@ -96,7 +105,11 @@ export default function FashionInfluencers() {
         threshold={0.3} 
         rootMargin="-100px"
         onLetterAnimationComplete={handleAnimationComplete}
-      />
+      /> */}
+      <TypewriterEffect
+          words={[{ text: "NADIA" }]}
+          className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[10%]"
+        />
             <hr className="h-px w-full bg-white border-0 my-1" />
             <p className="text-base md:text-xl font-medium leading-relaxed p-2">
               Elevating everyday elegance into extraordinary statements, one meticulously curated look at a time.
@@ -104,7 +117,7 @@ export default function FashionInfluencers() {
            
             <div className="flex items-center gap-2 mt-1 mb-4">
               <span className="font-medium text-lg">Embrace Your Inner Winston</span>
-              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank" rel="noopener noreferrer"><Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
+              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank" rel="noopener noreferrer"><Instagram className="w-7 h-7 sm:w-8 sm:h-8 hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)] text-white" /></a>
             </div>
           </div>
 
@@ -121,7 +134,7 @@ export default function FashionInfluencers() {
 
           {/* Mobile: Bunny Text */}
           <div className="flex md:hidden flex-col items-center text-center border-t border-white p-3">
-           <SplitText
+           {/* <SplitText
         text="BUNNY"
         className="text-2xl md:text-4xl lg:text-5xl font-bold text-center "
         delay={50}
@@ -132,7 +145,11 @@ export default function FashionInfluencers() {
         threshold={0.3} 
         rootMargin="-100px"
         onLetterAnimationComplete={handleAnimationComplete}
-      />
+      /> */}
+      <TypewriterEffect
+          words={[{ text: "BUNNY" }]}
+          className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[10%]"
+        />
             <hr className="h-px w-full bg-white border-0 my-1" />
             <p className="text-sm md:text-xl font-medium leading-relaxed">
               Bringing sunshine and smiles to every outfit, because fashion should always be fun!
@@ -142,7 +159,7 @@ export default function FashionInfluencers() {
             </div>
             <div className="flex items-center gap-2 mt-1 mb-1">
               <span className="font-medium">Shine Like Perfora!</span>
-              <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer"><Instagram className="w-5 h-5 hover:scale-110 transition-transform duration-300 ease-in-out" /></a>
+              <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer"><Instagram className="w-7 h-7 sm:w-8 sm:h-8 hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)] text-white" /></a>
               
             </div>
           </div>

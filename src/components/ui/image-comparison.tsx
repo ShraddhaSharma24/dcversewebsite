@@ -27,8 +27,8 @@ type ImageComparisonProps = {
 };
 
 const DEFAULT_SPRING_OPTIONS = {
-  bounce: 0,
-  duration: 0,
+  bounce: 0.5,
+  duration: 1,
 };
 
 function ImageComparison({
@@ -38,6 +38,7 @@ function ImageComparison({
   springOptions,
 }: ImageComparisonProps) {
   const [isDragging, setIsDragging] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
   const motionValue = useMotionValue(50);
   const motionSliderPosition = useSpring(
     motionValue,
@@ -46,8 +47,6 @@ function ImageComparison({
   const [sliderPosition, setSliderPosition] = useState(50);
 
   const handleDrag = (event: React.MouseEvent | React.TouchEvent) => {
-    if (!isDragging && !enableHover) return;
-
     const containerRect = (
       event.currentTarget as HTMLElement
     ).getBoundingClientRect();
@@ -61,7 +60,9 @@ function ImageComparison({
       100
     );
     motionValue.set(percentage);
-    setSliderPosition(percentage);
+    if (isDragging) {
+      setSliderPosition(percentage);
+    }
   };
 
   return (
@@ -75,12 +76,14 @@ function ImageComparison({
           className
         )}
         onMouseMove={handleDrag}
-        onMouseDown={() => !enableHover && setIsDragging(true)}
-        onMouseUp={() => !enableHover && setIsDragging(false)}
-        onMouseLeave={() => !enableHover && setIsDragging(false)}
+        onMouseDown={() => setIsDragging(true)}
+        onMouseUp={() => setIsDragging(false)}
+        onMouseLeave={() => { setIsDragging(false); setIsHovering(false); }}
         onTouchMove={handleDrag}
-        onTouchStart={() => !enableHover && setIsDragging(true)}
-        onTouchEnd={() => !enableHover && setIsDragging(false)}
+        onTouchStart={() => setIsDragging(true)}
+        onTouchEnd={() => setIsDragging(false)}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseOut={() => setIsHovering(false)}
       >
         {children}
       </div>

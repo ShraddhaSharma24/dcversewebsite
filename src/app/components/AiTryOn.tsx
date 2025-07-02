@@ -3,8 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import try_on from "@/app/assets/try_on.png";
+import { TypewriterEffect } from "./TypeWriter";
 
-import { SplitText } from "@/components/split-text";
+// import { SplitText } from "@/components/split-text";
 
 export default function AiTryOn() {
    
@@ -36,7 +37,7 @@ export default function AiTryOn() {
             {/* <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-white">
               AI Product Try Ons
             </h1> */}
-            <SplitText
+            {/* <SplitText
         text="AI TRY ONS"
         className="text-2xl md:text-4xl lg:text-4xl font-bold text-center text-white ml-[5%] lg:ml-[10%]"
         delay={50}
@@ -46,7 +47,11 @@ export default function AiTryOn() {
         threshold={0.3} 
         rootMargin="-100px"
         onLetterAnimationComplete={handleAnimationComplete}
-      />
+      /> */}
+      <TypewriterEffect
+          words={[{ text: "AI" }, { text: "TRY" }, { text: "ONS" }]}
+          className="text-2xl md:text-4xl lg:text-4xl font-bold text-center text-white ml-[5%] lg:ml-[10%]"
+        />
           </div>
 
           <hr className="border border-white" />

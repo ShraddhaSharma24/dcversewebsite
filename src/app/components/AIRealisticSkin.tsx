@@ -3,7 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import slider_replacement from "@/app/assets/slider_replacement.png";
-import { SplitText } from "@/components/split-text";
+// import { SplitText } from "@/components/split-text";
+import { TypewriterEffect } from "@/app/components/TypeWriter";
 import beforeImg from "@/app/assets/before.png";
 import afterImg from "@/app/assets/after.png";
 import { ImageComparison, ImageComparisonImage, ImageComparisonSlider } from "@/components/ui/image-comparison";
@@ -19,7 +20,7 @@ export default function RealisticSkinAd() {
   return (
     <div className="mx-4 sm:mx-[10%] lg:mx-[20%] border-2 border-white bg-black bg-opacity-50 backdrop-blur-sm font-poppins">
       <div className="p-4">
-      <SplitText
+      {/* <SplitText
         text="OUR FEATURES"
         className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center ml-[10%] lg:ml-[35%]"
         delay={50}
@@ -29,7 +30,11 @@ export default function RealisticSkinAd() {
         threshold={0.3} 
         rootMargin="-100px"
         onLetterAnimationComplete={handleAnimationComplete}
-      />
+      /> */}
+      <TypewriterEffect
+          words={[{ text: "HOT" }, { text: "FEATURES" }]}
+          className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center ml-[10%] lg:ml-[10%]"
+        />
       </div>
       <hr className="h-px bg-white border-2" />
       
@@ -60,7 +65,7 @@ export default function RealisticSkinAd() {
             </p>
             
             {/* Typewriter Effect Here */}
-            <SplitText
+            {/* <SplitText
         text="AI REALISTIC SKIN"
         className="text-2xl md:text-4xl lg:text-4xl font-bold text-white text-center ml-[5%] lg:ml-[10%]"
         delay={50}
@@ -70,7 +75,11 @@ export default function RealisticSkinAd() {
         threshold={0.3} 
         rootMargin="-100px"
         onLetterAnimationComplete={handleAnimationComplete}
-      />
+      /> */}
+      <TypewriterEffect
+          words={[{ text: "AI" }, { text: "REALISTIC" }, { text: "SKIN" }]}
+          className="text-2xl md:text-4xl lg:text-4xl font-bold text-white text-center ml-[5%] lg:ml-[10%]"
+        />
           </div>
           
           <hr className="border border-white" />
