@@ -4,6 +4,11 @@ import React from "react";
 import Image from "next/image";
 import slider_replacement from "@/app/assets/slider_replacement.png";
 import { SplitText } from "@/components/split-text";
+import beforeImg from "@/app/assets/before.png";
+import afterImg from "@/app/assets/after.png";
+import { ImageComparison, ImageComparisonImage, ImageComparisonSlider } from "@/components/ui/image-comparison";
+import { FaArrowRight } from "react-icons/fa";
+
 
 export default function RealisticSkinAd() {
   
@@ -28,18 +33,23 @@ export default function RealisticSkinAd() {
       </div>
       <hr className="h-px bg-white border-2" />
       
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-row flex-wrap md:flex-nowrap">
         {/* Image Section */}
-        <div className="w-full md:w-1/2 p-4 mt-2 sm:mt-4 md:mt-6">
-          <Image 
-            src={slider_replacement} 
-            alt="AI Realistic Skin" 
-            className="w-full h-auto object-cover"
-            width={600}
-            height={600}
-          />
+        <div className="w-full md:w-1/2 p-4 mt-2 sm:mt-4 md:mt-6 flex justify-center items-center">
+          <ImageComparison className="aspect-[7/8] w-full border-0.5 border-zinc-200 dark:border-zinc-800">
+            <ImageComparisonImage
+              src={beforeImg.src}
+              alt="Motion Primitives Dark"
+              position="left"
+            />
+            <ImageComparisonImage
+              src={afterImg.src}
+              alt="Motion Primitives Light"
+              position="right"
+            />
+            <ImageComparisonSlider className="bg-white " />
+          </ImageComparison>
         </div>
-        
         <div className="hidden md:block w-px bg-white m-0 p-0"></div>
 
         {/* Text Section */}
@@ -72,7 +82,7 @@ export default function RealisticSkinAd() {
               </p>
             </div>
             
-            {/* This is the vertical line that was missing - made visible on all screens */}
+           
             <div className="w-px bg-white"></div>
             
             <div className="w-2/7 relative overflow-hidden">

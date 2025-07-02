@@ -9,10 +9,10 @@ import { SplitText } from "@/components/split-text";
 import Image from "next/image";
 
 const ads = [
-  { id: 1, image: ad1 },
-  { id: 2, image: ad2 },
-  { id: 3, image: ad3 },
-  { id: 4, image: ad4 },
+  { id: 1, url: "https://www.youtube.com/embed/-jPTWxxeP4I?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0" },
+  { id: 2, url: "https://www.youtube.com/embed/mI1lqu-_sDA?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0" },
+  { id: 3, url: "https://www.youtube.com/embed/OD1cOgm1UBA?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0" },
+  { id: 4, url: "https://www.youtube.com/embed/ZPtGxEFbMDs?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0" },
 ];
 
 export default function AdsSection() {
@@ -67,15 +67,16 @@ export default function AdsSection() {
           {[...ads, ...ads].map((ad, index) => (
             <div
               key={`${ad.id}-${index}`}
-              className="inline-flex h-full relative rounded-lg overflow-hidden transition-transform hover:scale-105"
-              style={{ minWidth: "300px" }}
+              className="inline-flex h-full relative rounded-lg overflow-hidden transition-transform hover:scale-105 bg-black"
+              style={{ minWidth: "300px", width: "300px", height: "100%" }}
             >
-              <Image
-                src={ad.image}
-                alt={`Advertisement ${ad.id}`}
-                fill
-                className="object-cover"
-                priority
+              <iframe
+                src={ad.url}
+                title={`Advertisement ${ad.id}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full border-0"
+                style={{ aspectRatio: '9/16', minHeight: '100%', minWidth: '100%' }}
               />
             </div>
           ))}
