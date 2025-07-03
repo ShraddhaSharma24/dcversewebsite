@@ -7,7 +7,11 @@ import model_control from "@/app/assets/model_control.png";
 // import { SplitText } from "@/components/split-text";  
 import { TypewriterEffect } from "@/app/components/TypeWriter";
 
-export default function ModelControl() {
+interface ModelProps {
+  id?: string;
+}
+
+export default function ModelControl({ id }: ModelProps) {
   
    const handleAnimationComplete = () => {
   console.log('All letters have animated!');

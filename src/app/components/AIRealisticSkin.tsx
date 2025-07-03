@@ -10,8 +10,11 @@ import afterImg from "@/app/assets/after.png";
 import { ImageComparison, ImageComparisonImage, ImageComparisonSlider } from "@/components/ui/image-comparison";
 import { FaArrowRight } from "react-icons/fa";
 
+interface SkinProps {
+  id?: string;
+}
 
-export default function RealisticSkinAd() {
+export default function RealisticSkinAd({ id }: SkinProps) {
   
    const handleAnimationComplete = () => {
   console.log('All letters have animated!');

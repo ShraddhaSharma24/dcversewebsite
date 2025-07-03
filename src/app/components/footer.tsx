@@ -1,6 +1,9 @@
 import React from "react";
 
-function Footer() {
+interface FooterProps {
+  id?: string;
+} 
+function Footer({ id }: FooterProps) {
   return (
     <footer className="bg-black text-white px-4 sm:px-6 md:px-10 py-8 sm:py-10 md:py-14 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">

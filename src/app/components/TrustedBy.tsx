@@ -42,8 +42,8 @@ export default function TrustedBy() {
   }, []);
 
   return (
-    <div className="bg-black overflow-hidden mt-4">
-      <div className="mx-4 sm:mx-[10%] lg:mx-[20%] border border-white py-6">
+    <div className="overflow-hidden ">
+      <div className="mx-4 sm:mx-[10%] lg:mx-[20%] border bg-black border-white py-6">
         <div className="flex items-center mb-6">
           <hr className="flex-grow border-t border-white" />
           <p className="text-white text-center mx-4 text-sm sm:text-base md:text-xl uppercase font-poppins font-semibold tracking-widest">

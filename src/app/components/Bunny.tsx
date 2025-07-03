@@ -29,8 +29,12 @@ export default function Bunny() {
             <div className="text-lg sm:text-xl md:text-2xl text-white mr-4 mb-4">
               Shine Like Perfora!
             </div>
-            <Instagram className="w-8 h-8 sm:w-9 sm:h-9 ml-2 text-white mb-4 hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)]" />
-            <Youtube className="w-8 h-8 sm:w-9 sm:h-9 ml-2 text-white mb-4 hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)]" />
+            <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md group">
+              <Instagram className="w-8 h-8 sm:w-9 sm:h-9 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
+            </span>
+            <span className="inline-flex items-center justify-center bg-red-500 rounded-md p-1 sm:p-1.5 shadow-md ml-2 group">
+              <Youtube className="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-200 group-hover:scale-125" />
+            </span>
           </div>
         </div>
         

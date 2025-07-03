@@ -47,7 +47,9 @@ export default function Kshan() {
             <div className="text-lg sm:text-xl md:text-2xl text-white mr-4">
               Tap in to my style game!
             </div>
-            <Instagram className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 ml-2 text-white hover:scale-105 transition-transform duration-300 ease-in-out" />
+            <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md group">
+              <Instagram className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
+            </span>
           </div>
         </div>
       </div>

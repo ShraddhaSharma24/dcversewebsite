@@ -39,7 +39,9 @@ export default function Nadia() {
             <div className="text-xl sm:text-2xl text-white mr-3 sm:mr-4">
               Embrace Your Inner Winston.
             </div>
-            <Instagram className="w-7 h-7 sm:w-8 sm:h-8 ml-1 sm:ml-2 text-white hover:scale-110 transition-transform duration-300 ease-in-out" />
+            <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md group">
+              <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
+            </span>
           </div>
         </div>
       </div>

@@ -3,8 +3,6 @@ import Divider from "./components/divider";
 import AIRelisticSkin from "./components/AIRealisticSkin";
 import AiTryOn from "./components/AiTryOn";
 import ModelControl from "./components/ModelControl";
-
-
 import DCVerse from "./components/hero";
 import AdsSection from "./components/Ads";
 import TrustedBy from "./components/TrustedBy";
@@ -15,16 +13,14 @@ import Dcverse_logo from "@/app/assets/Dcverse_logo.png";
 import PoweredBy from "./components/PoweredBy";
 import VirtualHumans from "./components/new";
 import Image from "next/image";
+import ThreeWall3DBackground from "./components/ThreeDGridBackground";
 
 import FashionInfluencers from "./components/new2";
 
 export default function Home() {
   return (
-    <div
-      className="w-full relative bg-black bg-[url('/background_1.png')] bg-repeat bg-[length:300px_300px]"
-    >
-      
-      <div className="fixed top-0 left-0 right-0 h-[8vh] min-h-[40px] bg-black z-10 flex items-center justify-center px-2 sm:px-0 border-b-1 border-white">
+    <div className="w-full relative bg-black">
+      <div className="fixed top-0 left-0 right-0 h-[8vh] min-h-[40px] bg-black z-10 flex items-center justify-center px-2 sm:px-0 border-b-1 border-white" >
         <Image 
           src={Dcverse_logo} 
           alt="DCverse Logo" 
@@ -34,29 +30,35 @@ export default function Home() {
       </div>
       <div className="backdrop-blur-sm backdrop-brightness-[0.6]">
         <DCVerse />
+        <Divider id="divider1" />
         
-        <Divider />
-        <h1 className="text-5xl font-bold text-white mb-2 text-center font-poppins p-2">
+        <h1 className="text-5xl font-bold bg-black text-white mb-2 text-center font-poppins p-2">
           Let&apos;s Get you inside the DC Verse
         </h1>
-        <Divider />
+        <Divider id="divider2" />
+        
+        {/* First 3D grid between divider 2 and divider 3 */}
+       
+        
         <VirtualHumans/>
         <FashionInfluencers/>
-        {/* <Kshan />
-        <Rynaa />
-        <Nadia />
-        <Bunny /> */}
+        <Divider id="divider3" />
+        <ThreeWall3DBackground startId="divider2" endId="divider3" />
         <PoweredBy />
         <AIRelisticSkin />
         <AiTryOn />
         <ModelControl />
-        <Divider />
+        <Divider id="divider4" />
+        <ThreeWall3DBackground startId="divider3" endId="divider4" />
+        
         <AdsSection />
         <TrustedBy />
         <Features />
         <Form />
-        <Divider />
-        <Footer />
+        <Divider id="divider5" />
+      
+        <Footer id="footer" />
+        <ThreeWall3DBackground startId="divider4" endId="divider5" />
       </div>
     </div>
   );

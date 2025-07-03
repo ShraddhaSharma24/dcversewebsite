@@ -15,9 +15,12 @@ const ads = [
   { id: 3, url: "https://www.youtube.com/embed/OD1cOgm1UBA?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0" },
   { id: 4, url: "https://www.youtube.com/embed/ZPtGxEFbMDs?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0" },
 ];
+interface AdProps {
+  id?: string;
+}
 
 const words=["OUR", "ADVERTISEMENT"];
-export default function AdsSection() {
+export default function AdsSection({ id }: AdProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleAnimationComplete = () => {
@@ -46,7 +49,7 @@ export default function AdsSection() {
   }, []);
 
   return (
-    <div className="bg-black overflow-hidden mt-4 h-full">
+    <div className=" overflow-hidden mt-4 h-full">
       <div className="mx-4 sm:mx-[10%] lg:mx-[20%] bg-black border border-white shadow-lg h-full ">
         <div className="p-4">
           <div className="flex justify-center items-center w-full">

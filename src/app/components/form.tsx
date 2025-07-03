@@ -2,7 +2,11 @@
 
 import { useState } from 'react';
 
-function Form() {
+interface FormProps {
+  id?: string;
+}
+
+function Form({ id }: FormProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',

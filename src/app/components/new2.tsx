@@ -16,7 +16,7 @@ export default function FashionInfluencers() {
 
 };
   return (
-    <div className="mx-4 md:mx-[20%]  border-2 border-white text-white font-poppins bg-black">
+    <div className="mx-4 md:mx-[20%]  border-2 border-white text-white font-poppins bg-black mb-8">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Left Side: Nadia Image + Nadia Text (mobile) / Bunny Text (desktop) */}
         <div className="flex flex-col border-b md:border-b-0 md:border-r border-white">
@@ -57,7 +57,11 @@ export default function FashionInfluencers() {
             </div>
             <div className="flex items-center gap-2 mt-1 mb-1">
               <span className="font-medium">Embrace Your Inner Winston</span>
-              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank"><Instagram className="w-7 h-7 sm:w-8 sm:h-8 hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)] text-white" /></a>
+              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank" className="group">
+                <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
+                  <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
+                </span>
+              </a>
             </div>
           </div>
 
@@ -85,7 +89,11 @@ export default function FashionInfluencers() {
             </p>
             <div className="flex items-center gap-2 mt-1 mb-4">
               <span className="font-medium text-lg">Shine Like Perfora!</span>
-             <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer"> <Instagram className="w-7 h-7 sm:w-8 sm:h-8 hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)] text-white" /></a>
+             <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer" className="group">
+               <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
+                 <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
+               </span>
+             </a>
               
             </div>
           </div>
@@ -117,7 +125,11 @@ export default function FashionInfluencers() {
            
             <div className="flex items-center gap-2 mt-1 mb-4">
               <span className="font-medium text-lg">Embrace Your Inner Winston</span>
-              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank" rel="noopener noreferrer"><Instagram className="w-7 h-7 sm:w-8 sm:h-8 hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)] text-white" /></a>
+              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank" className="group">
+                <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
+                  <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
+                </span>
+              </a>
             </div>
           </div>
 
@@ -159,7 +171,11 @@ export default function FashionInfluencers() {
             </div>
             <div className="flex items-center gap-2 mt-1 mb-1">
               <span className="font-medium">Shine Like Perfora!</span>
-              <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer"><Instagram className="w-7 h-7 sm:w-8 sm:h-8 hover:scale-110 transition-transform duration-300 ease-in-out shadow-md drop-shadow-[0_1px_4px_rgba(255,255,255,0.25)] text-white" /></a>
+              <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer" className="group">
+                <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
+                  <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
+                </span>
+              </a>
               
             </div>
           </div>

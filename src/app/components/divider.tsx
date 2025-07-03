@@ -1,80 +1,12 @@
-// "use client";
-
-// import React, { useEffect, useState, useRef, useCallback } from "react";
-
-// export default function Divider() {
-//   const [binaryText, setBinaryText] = useState("");
-//   const containerRef = useRef<HTMLDivElement>(null);
-
-//   const generateBinaryString = useCallback(() => {
-//     const charsPerScreen = Math.ceil(window.innerWidth / 4.5); 
-//     let binary = "";
-//     for (let i = 0; i < charsPerScreen; i++) {
-//       binary += Math.round(Math.random()).toString();
-   
-//       if (i % 15 === 0 && i !== 0 && i < charsPerScreen - 5) {
-//         binary += " /// ";
-//       }
-//     }
-//     return binary;
-//   }, []);
-
-//   useEffect(() => {
-//     if (!containerRef.current) return;
-
- 
-//     setBinaryText(generateBinaryString());
-
-//     const interval = setInterval(() => {
-//       setBinaryText(prev => {
-//         const newText = prev.split('').map(char => {
-  
-//           if (char === '0' || char === '1') {
-//             const flipChance = Math.random();
-//             return flipChance > 0.93 ? (char === '0' ? '1' : '0') : char;
-//           }
-//           return char;
-//         }).join('');
-        
-        
-//         return Math.random() > 0.97 ? generateBinaryString() : newText;
-//       });
-//     }, 250); 
-
-   
-//     const handleResize = () => {
-//       setBinaryText(generateBinaryString());
-//     };
-
-//     window.addEventListener('resize', handleResize);
-//     return () => {
-//       clearInterval(interval);
-//       window.removeEventListener('resize', handleResize);
-//     };
-//   }, [generateBinaryString]);
-
-//   return (
-//     <div className="w-full bg-black overflow-hidden py-1 select-none font-poppins">
-//       <div 
-//         ref={containerRef}
-//         className="whitespace-nowrap text-center tracking-tighter"
-//       >
-//          <hr className="h-px my-4 bg-black border-white mb-1 mt-0" />
-//         <span className="text-white font-mono text-[10px] leading-3 opacity-80">
-//           {binaryText}
-//         </span>
-//          <hr className="h-px my-4 bg-black border-white mb-0 mt-1" />
-//       </div>
-//     </div>
-//   );
-// }
-
-
 "use client";
 
 import React, { useEffect, useState, useRef, useCallback } from "react";
 
-export default function Divider() {
+interface DividerProps {
+  id?: string;
+}
+
+export default function Divider({ id }: DividerProps) {
   const [binaryText, setBinaryText] = useState("");
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -126,7 +58,7 @@ export default function Divider() {
   }, [generateBinaryString]);
 
   return (
-    <div className="w-full bg-black overflow-hidden py-1 select-none font-poppins">
+    <div id={id} className="w-full bg-black overflow-hidden py-1 select-none font-poppins">
       <div ref={containerRef} className="whitespace-nowrap text-center tracking-tighter">
         <hr className="h-px my-4 bg-black border-white mb-1 mt-0" />
         <span className="text-white font-mono text-[10px] leading-3 opacity-80">
@@ -145,4 +77,3 @@ export default function Divider() {
     </div>
   );
 }
-
