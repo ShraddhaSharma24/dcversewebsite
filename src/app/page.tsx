@@ -33,7 +33,7 @@ export default function Home() {
         <Divider id="divider1" />
         
         <h1 className="text-5xl font-bold bg-black text-white mb-2 text-center font-poppins p-2">
-          Let&apos;s Get you inside the DC Verse
+          India&apos;s First AI Creatorverse
         </h1>
         <Divider id="divider2" />
         

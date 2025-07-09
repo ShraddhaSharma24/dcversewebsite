@@ -5,10 +5,10 @@ interface FooterProps {
 } 
 function Footer({ id }: FooterProps) {
   return (
-    <footer className="bg-black text-white px-4 sm:px-6 md:px-10 py-8 sm:py-10 md:py-14 ">
+    <footer className="bg-black/60 backdrop-blur-md border-t border-white/20 text-white px-4 sm:px-6 md:px-10 py-8 sm:py-10 md:py-14 shadow-2xl">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
         {/* Coming Up Section */}
-        <div className="md:col-span-2 bg-[#0f0f0f] border-2 border-white rounded-xl md:rounded-2xl p-6 sm:p-8 h-full flex flex-col justify-between">
+        <div className="md:col-span-2 bg-white/10 backdrop-blur-lg border-2 border-white/30 rounded-xl md:rounded-2xl p-6 sm:p-8 h-full flex flex-col justify-between shadow-lg">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">Coming Up</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
             {/* Content Creation */}
@@ -47,13 +47,13 @@ function Footer({ id }: FooterProps) {
 
         {/* Contact & Info Section */}
         <div className="flex flex-col gap-3 sm:gap-4 h-full justify-between">
-          <div className="bg-[#0f0f0f] rounded-xl md:rounded-2xl border-white border-2 px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium text-center">
-            dcverce@gmail.com
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl md:rounded-2xl border-white/30 border-2 px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium text-center shadow">
+          business@dcverse.in
           </div>
-          <div className="bg-[#0f0f0f] rounded-xl md:rounded-2xl border-white border-2 px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium text-center">
-            9999999999
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl md:rounded-2xl border-white/30 border-2 px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium text-center shadow">
+          Mumbai and Delhi
           </div>
-          <div className="bg-[#0f0f0f] rounded-xl md:rounded-2xl border-white border-2 px-4 sm:px-6 py-3 sm:py-4 text-center">
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl md:rounded-2xl border-white/30 border-2 px-4 sm:px-6 py-3 sm:py-4 text-center shadow">
             <p className="font-semibold text-sm sm:text-base mb-1">Career<br />Get Update</p>
             <p className="text-xs sm:text-sm text-gray-400">Privacy Policy</p>
             <p className="text-xs sm:text-sm text-gray-400">Imprint</p>

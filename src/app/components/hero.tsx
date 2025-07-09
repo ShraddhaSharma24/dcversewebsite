@@ -6,9 +6,6 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative w-full h-screen min-h-[400px] bg-black overflow-hidden">
-      
-      
-      
       <video
         src={"/herovideo.mp4"}
         autoPlay

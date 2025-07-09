@@ -43,19 +43,42 @@ export default function RealisticSkinAd({ id }: SkinProps) {
       
       <div className="flex flex-row flex-wrap md:flex-nowrap">
         {/* Image Section */}
-        <div className="w-full md:w-1/2 p-4 mt-2 sm:mt-4 md:mt-6 flex justify-center items-center">
-          <ImageComparison className="aspect-[7/8] w-full border-0.5 border-zinc-200 dark:border-zinc-800">
+        <div className="w-full md:w-1/2 p-4 mt-2 sm:mt-4 md:mt-6 flex justify-center items-center relative">
+          {/* Overlay tags for Before/After */}
+          <span
+              style={{ top: '60%', background: 'rgba(220,220,220,0.5)' }}
+              className="absolute left-4 ml-4 z-10 text-white px-5 py-2 rounded font-bold text-base select-none pointer-events-none flex items-center justify-center shadow-lg"
+            >
+              Before
+            </span>
+            <span
+              style={{ top: '60%', background: 'rgba(220,220,220,0.5)' }}
+              className="absolute right-4 mr-4 z-10 text-white px-5 py-2 rounded font-bold text-base select-none pointer-events-none flex items-center justify-center shadow-lg"
+            >
+              After
+            </span>
+          <ImageComparison 
+            className="aspect-[7/8] w-full border-0.5 border-zinc-200 dark:border-zinc-800"
+            springOptions={{ bounce: 0.1, duration: 1.8 }}
+          >
             <ImageComparisonImage
               src={beforeImg.src}
-              alt="Motion Primitives Dark"
+              alt="Before Skin"
               position="left"
             />
             <ImageComparisonImage
               src={afterImg.src}
-              alt="Motion Primitives Light"
+              alt="After Skin"
               position="right"
             />
-            <ImageComparisonSlider className="bg-white " />
+            <ImageComparisonSlider className="bg-white flex items-center justify-center">
+              <span className="bg-gray-700 bg-opacity-80 rounded-full p-1 shadow-lg flex items-center justify-center">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 6L4 11L8 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M14 6L18 11L14 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+            </ImageComparisonSlider>
           </ImageComparison>
         </div>
         <div className="hidden md:block w-px bg-white m-0 p-0"></div>

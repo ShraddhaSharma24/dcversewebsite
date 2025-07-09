@@ -76,12 +76,12 @@ export default function VirtualHumans({ id }: VirtualHumansProps) {
           className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[10%]"
         />
             <hr className="h-px w-full bg-white border-0 my-1" />
-            <p className="text-sm md:text-xl font-medium leading-relaxed">
+            {/* <p className="text-sm md:text-xl font-medium leading-relaxed">
               I&apos;m Kshan, your guide to sustainable men&apos;s style, curating
               eco-conscious looks that turn heads.
-            </p>
+            </p> */}
             <div className="flex items-center gap-2 mt-2 mb-1">
-              <span className="font-medium">Tap in to my style game!</span>
+              {/* <span className="font-medium">Tap in to my style game!</span> */}
              <a href="https://www.instagram.com/kshan_lifestyle/" target="_blank" className="group">
                <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
                  <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
@@ -108,13 +108,13 @@ export default function VirtualHumans({ id }: VirtualHumansProps) {
           className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[4%]"
         />
             <hr className="h-px w-full bg-white border-0 my-1" />
-            <p className="text-base md:text-xl font-medium leading-relaxed p-2">
+            {/* <p className="text-base md:text-xl font-medium leading-relaxed p-2">
               Avant-garde fashion queen. Bold looks, fearless vibes. <br/>
               <strong>#AvantGardeFashion</strong> <br />
               <strong>#FashionAsArt</strong>
-            </p>
+            </p> */}
             <div className="flex items-center gap-2 mt-2 mb-4">
-              <span className="font-medium text-lg">Tap in to my style game!</span>
+              {/* <span className="font-medium text-lg">Tap in to my style game!</span> */}
              <a href="https://www.instagram.com/rynaa_lifestyle" target="_blank" className="group">
                <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-lg">
                  <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
@@ -149,12 +149,12 @@ export default function VirtualHumans({ id }: VirtualHumansProps) {
           className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[4%]"
         />
             <hr className="h-px w-full bg-white border-0 my-1" />
-            <p className="text-base md:text-xl font-medium leading-relaxed p-2">
+            {/* <p className="text-base md:text-xl font-medium leading-relaxed p-2">
               I&apos;m Kshan, your guide to sustainable men&apos;s style, curating
               eco-conscious looks that turn heads.
-            </p>
+            </p> */}
             <div className="flex items-center gap-2 mt-2 mb-4">
-              <span className="font-medium text-lg">Tap in to my style game!</span>
+              {/* <span className="font-medium text-lg">Tap in to my style game!</span> */}
               <a href="https://www.instagram.com/kshan_lifestyle/" target="_blank" className="group">
                 <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
                   <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
@@ -193,13 +193,13 @@ export default function VirtualHumans({ id }: VirtualHumansProps) {
           className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[4%]"
         />
             <hr className="h-px w-full bg-white border-0 my-1mx-2" />
-            <p className="text-sm md:text-xl font-medium leading-relaxed">
+            {/* <p className="text-sm md:text-xl font-medium leading-relaxed">
               Avant-garde fashion queen. Bold looks, fearless vibes. &nbsp;
               <strong>#AvantGardeFashion</strong> <br />
               <strong>#FashionAsArt</strong>
-            </p>
+            </p> */}
             <div className="flex items-center gap-2 mt-2 mb-1">
-              <span className="font-medium">Unlock My Vision</span>
+              {/* <span className="font-medium">Unlock My Vision</span> */}
              <a href="https://www.instagram.com/rynaa_lifestyle" target="_blank" className="group">
                <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
                  <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
