@@ -36,10 +36,7 @@ export default function Home() {
           India&apos;s First AI Creatorverse
         </h1>
         <Divider id="divider2" />
-        
-        {/* First 3D grid between divider 2 and divider 3 */}
-       
-        
+         
         <VirtualHumans/>
         <FashionInfluencers/>
         <Divider id="divider3" />
