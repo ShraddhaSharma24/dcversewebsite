@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Dcverse",
-  description: "Take Your Brand to the Next Level",
+  description: "Dcverse is a new way to create and share your content",
   icons: [{ rel: 'icon', url: '/Dcverse_logo.png' }],
 };
 
