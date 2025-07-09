@@ -50,7 +50,7 @@ export default function AiTryOn() {
       /> */}
       <TypewriterEffect
           words={[{ text: "AI" }, { text: "TRY" }, { text: "ONS" }]}
-          className="text-2xl md:text-4xl lg:text-4xl font-bold text-center text-white ml-[5%] lg:ml-[10%]"
+          className="text-2xl md:text-4xl lg:text-4xl font-bold text-left text-white "
         />
           </div>
 
@@ -66,8 +66,8 @@ export default function AiTryOn() {
                     -45deg,
                     transparent,
                     transparent 20px,
-                    white 20px,
-                    white 21px
+                    grey 20px,
+                    grey 21px
                   )`
                 }}
               />

@@ -104,7 +104,7 @@ export default function RealisticSkinAd({ id }: SkinProps) {
       /> */}
       <TypewriterEffect
           words={[{ text: "AI" }, { text: "REALISTIC" }, { text: "SKIN" }]}
-          className="text-2xl md:text-4xl lg:text-4xl font-bold text-white text-center ml-[5%] lg:ml-[10%]"
+          className="text-2xl md:text-4xl lg:text-4xl font-bold text-white text-right "
         />
           </div>
           
@@ -128,8 +128,8 @@ export default function RealisticSkinAd({ id }: SkinProps) {
                     -45deg,
                     transparent,
                     transparent 20px,
-                    white 20px,
-                    white 21px
+                    grey 20px,
+                    grey 21px
                   )`
                 }}
               ></div>

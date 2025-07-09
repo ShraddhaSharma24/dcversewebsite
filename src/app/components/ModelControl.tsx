@@ -54,7 +54,7 @@ export default function ModelControl({ id }: ModelProps) {
       /> */}
       <TypewriterEffect
           words={[{ text: "MODEL" }, { text: "CONTROL" }]}
-          className="text-2xl md:text-4xl lg:text-4xl font-bold text-white text-center ml-[5%] lg:ml-[8%]"
+          className="text-2xl md:text-4xl lg:text-4xl font-bold text-white text-right"
         />
         </div>
           <hr className="border border-white" />
@@ -78,8 +78,8 @@ export default function ModelControl({ id }: ModelProps) {
                     -45deg,
                     transparent,
                     transparent 20px,
-                    white 20px,
-                    white 21px
+                    grey 20px,
+                    grey 21px
                   )`
                 }}
               ></div>
