@@ -86,7 +86,7 @@ export default function RealisticSkinAd({ id }: SkinProps) {
         {/* Text Section */}
         <div className="w-full md:w-1/2 flex flex-col">
           <div className="p-4 sm:p-6">
-            <p className="uppercase text-white text-xs sm:text-sm mb-1 sm:mb-2">
+            <p className="uppercase text-right text-white text-xs sm:text-sm mb-1 sm:mb-2">
               No more Plastic AI Skin
             </p>
             

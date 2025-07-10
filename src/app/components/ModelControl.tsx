@@ -35,7 +35,7 @@ export default function ModelControl({ id }: ModelProps) {
 
         <div className="w-full md:w-1/2 flex flex-col">
           <div className="p-4 sm:p-6">
-            <p className="uppercase text-white text-xs sm:text-sm mb-1 sm:mb-2">
+            <p className="uppercase text-white text-right text-xs sm:text-sm mb-1 sm:mb-2">
               Be Independent
             </p>
             {/* <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-white">
