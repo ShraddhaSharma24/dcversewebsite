@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import model_control from "@/app/assets/model_control.png";
+const pose_change = "/Pose-Change.gif";
 
 // import { SplitText } from "@/components/split-text";  
 import { TypewriterEffect } from "@/app/components/TypeWriter";
@@ -22,8 +22,8 @@ export default function ModelControl({ id }: ModelProps) {
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 align-center p-4 mt-2 sm:mt-4 md:mt-6">
           <Image 
-            src={model_control} 
-            alt="Model Control" 
+            src={pose_change} 
+            alt="Pose Change" 
             className="w-full h-auto object-cover max-w-[500px] mx-auto"
             width={600}
             height={600}

@@ -24,6 +24,16 @@ function Form({ id }: FormProps) {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    // Check if all fields are filled
+    const requiredFields = ['name', 'email', 'businessName', 'source', 'purpose'];
+    const emptyFields = requiredFields.filter(field => !formData[field as keyof typeof formData].trim());
+    
+    if (emptyFields.length > 0) {
+      setSubmitMessage('Please fill in all required fields marked with *');
+      return;
+    }
+    
     setIsSubmitting(true);
     setSubmitMessage('');
 
@@ -71,51 +81,68 @@ function Form({ id }: FormProps) {
       {/* Right Section (Form) */}
       <div className="flex-1">
         <form className="flex flex-col gap-3 md:gap-4" onSubmit={handleSubmit}>
-          <input
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Name"
-            aria-label="Name"
-            required
-            className="p-2 text-sm sm:text-base bg-black border border-gray-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all hover:shadow-[4px_0_10px_0_rgba(0,255,255,0.3)]"
-          />
-          <input
-            name="email"
-            type="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Email"
-            aria-label="Email"
-            required
-            className="p-2 text-sm sm:text-base bg-black border border-gray-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all hover:shadow-[4px_0_10px_0_rgba(0,255,255,0.3)]"
-          />
-          <input
-            name="businessName"
-            value={formData.businessName}
-            onChange={handleChange}
-            placeholder="Business Name"
-            aria-label="Business Name"
-            className="p-2 text-sm sm:text-base bg-black border border-gray-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all hover:shadow-[4px_0_10px_0_rgba(0,255,255,0.3)]"
-          />
-          <input
-            name="source"
-            value={formData.source}
-            onChange={handleChange}
-            placeholder="Where did you hear about us"
-            aria-label="Where did you hear about us"
-            className="p-2 text-sm sm:text-base bg-black border border-gray-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all hover:shadow-[4px_0_10px_0_rgba(0,255,255,0.3)]"
-          />
-          <textarea
-            name="purpose"
-            value={formData.purpose}
-            onChange={handleChange}
-            placeholder="Purpose"
-            aria-label="Purpose"
-            required
-            rows={4}
-            className="p-2 text-sm sm:text-base bg-black border border-gray-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all hover:shadow-[4px_0_10px_0_rgba(0,255,255,0.3)]"
-          ></textarea>
+          <div className="relative">
+            <span className="absolute -top-3.5 right-2 text-red-500 text-sm">*</span>
+            <input
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Name"
+              aria-label="Name"
+              required
+              className="p-2 text-sm sm:text-base bg-black border border-gray-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all hover:shadow-[4px_0_10px_0_rgba(0,255,255,0.3)] w-full"
+            />
+          </div>
+          <div className="relative">
+            <span className="absolute -top-3.5 right-2 text-red-500 text-sm">*</span>
+            <input
+              name="email"
+              type="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email"
+              aria-label="Email"
+              required
+              className="p-2 text-sm sm:text-base bg-black border border-gray-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all hover:shadow-[4px_0_10px_0_rgba(0,255,255,0.3)] w-full"
+            />
+          </div>
+          <div className="relative">
+            <span className="absolute -top-3.5 right-2 text-red-500 text-sm">*</span>
+            <input
+              name="businessName"
+              value={formData.businessName}
+              onChange={handleChange}
+              placeholder="Business Name"
+              aria-label="Business Name"
+              required
+              className="p-2 text-sm sm:text-base bg-black border border-gray-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all hover:shadow-[4px_0_10px_0_rgba(0,255,255,0.3)] w-full"
+            />
+          </div>
+          <div className="relative">
+            <span className="absolute -top-3.5 right-2 text-red-500 text-sm">*</span>
+            <input
+              name="source"
+              value={formData.source}
+              onChange={handleChange}
+              placeholder="Where did you hear about us"
+              aria-label="Where did you hear about us"
+              required
+              className="p-2 text-sm sm:text-base bg-black border border-gray-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all hover:shadow-[4px_0_10px_0_rgba(0,255,255,0.3)] w-full"
+            />
+          </div>
+          <div className="relative">
+            <span className="absolute -top-3.5 right-2 text-red-500 text-sm">*</span>
+            <textarea
+              name="purpose"
+              value={formData.purpose}
+              onChange={handleChange}
+              placeholder="Purpose"
+              aria-label="Purpose"
+              required
+              rows={4}
+              className="p-2 text-sm sm:text-base bg-black border border-gray-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all hover:shadow-[4px_0_10px_0_rgba(0,255,255,0.3)] w-full"
+            ></textarea>
+          </div>
 
           <button
             type="submit"

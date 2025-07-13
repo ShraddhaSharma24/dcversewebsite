@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import try_on from "@/app/assets/try_on.png";
+const vton_gif = "/Vton-Gif.gif";
 import { TypewriterEffect } from "./TypeWriter";
 
 // import { SplitText } from "@/components/split-text";
@@ -19,8 +19,8 @@ export default function AiTryOn() {
         {/* Image Section - Moved to top on mobile */}
         <div className="w-full md:w-1/2 flex items-center justify-center p-4 order-first md:order-last">
           <Image 
-            src={try_on} 
-            alt="AI Try On" 
+            src={vton_gif} 
+            alt="VTON GIF" 
             className="w-full h-auto object-cover max-w-[500px]"
             width={600}
             height={600}
