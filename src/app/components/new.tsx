@@ -104,7 +104,7 @@ export default function VirtualHumans({ id }: VirtualHumansProps) {
         onLetterAnimationComplete={handleAnimationComplete}
       /> */}
       <TypewriterEffect
-          words={[{ text: "RYNAA" }]}
+          words={[{ text: "KSHAN" }]}
           className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[4%]"
         />
             <hr className="h-px w-full bg-white border-0 my-1" />
@@ -115,14 +115,9 @@ export default function VirtualHumans({ id }: VirtualHumansProps) {
             </p> */}
             <div className="flex items-center gap-2 mt-2 mb-4">
               {/* <span className="font-medium text-lg">Tap in to my style game!</span> */}
-             <a href="https://www.instagram.com/rynaa_lifestyle" target="_blank" className="group">
-               <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-lg">
-                 <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
-               </span>
-             </a>
-              <a href="https://www.youtube.com/@RynaaLifestyle" target="_blank" className="group">
-                <span className="inline-flex items-center justify-center bg-red-500 rounded-md p-1 sm:p-1.5 shadow-md">
-                  <Youtube className="w-7 h-7 sm:w-8 sm:h-8 text-white transition-transform duration-200 group-hover:scale-125" />
+              <a href="https://www.instagram.com/kshan_lifestyle/" target="_blank" className="group">
+                <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
+                  <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
                 </span>
               </a>
             </div>
@@ -145,7 +140,7 @@ export default function VirtualHumans({ id }: VirtualHumansProps) {
         onLetterAnimationComplete={handleAnimationComplete}
       /> */}
       <TypewriterEffect
-          words={[{ text: "KSHAN" }]}
+          words={[{ text: "RYNAA" }]}
           className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[4%]"
         />
             <hr className="h-px w-full bg-white border-0 my-1" />
@@ -155,12 +150,18 @@ export default function VirtualHumans({ id }: VirtualHumansProps) {
             </p> */}
             <div className="flex items-center gap-2 mt-2 mb-4">
               {/* <span className="font-medium text-lg">Tap in to my style game!</span> */}
-              <a href="https://www.instagram.com/kshan_lifestyle/" target="_blank" className="group">
-                <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
-                  <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
+             <a href="https://www.instagram.com/rynaa_lifestyle" target="_blank" className="group">
+               <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-lg">
+                 <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
+               </span>
+             </a>
+              <a href="https://www.youtube.com/@RynaaLifestyle" target="_blank" className="group">
+                <span className="inline-flex items-center justify-center bg-red-500 rounded-md p-1 sm:p-1.5 shadow-md">
+                  <Youtube className="w-7 h-7 sm:w-8 sm:h-8 text-white transition-transform duration-200 group-hover:scale-125" />
                 </span>
               </a>
             </div>
+            
           </div>
 
           {/* Rynaa Image */}

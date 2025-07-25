@@ -80,21 +80,20 @@ export default function FashionInfluencers() {
         onLetterAnimationComplete={handleAnimationComplete}
       /> */}
       <TypewriterEffect
-          words={[{ text: "BUNNY" }]}
+          words={[{ text: "NADIA" }]}
           className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[10%]"
         />
             <hr className="h-px w-full bg-white border-0 my-1" />
             {/* <p className="text-base md:text-xl font-medium leading-relaxed p-2">
               Bringing sunshine and smiles to every outfit, because fashion should always be fun!
             </p> */}
-            <div className="flex items-center gap-2 mt-1 mb-4">
-              {/* <span className="font-medium text-lg">Shine Like Perfora!</span> */}
-             <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer" className="group">
-               <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
-                 <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
-               </span>
-             </a>
-              
+           <div className="flex items-center gap-2 mt-1 mb-4">
+              {/* <span className="font-medium text-lg">Embrace Your Inner Winston</span> */}
+              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank" className="group">
+                <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
+                  <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -115,22 +114,23 @@ export default function FashionInfluencers() {
         onLetterAnimationComplete={handleAnimationComplete}
       /> */}
       <TypewriterEffect
-          words={[{ text: "NADIA" }]}
+          words={[{ text: "BUNNY" }]}
           className="text-2xl md:text-4xl lg:text-5xl font-bold text-center ml-[5%] lg:ml-[10%]"
         />
             <hr className="h-px w-full bg-white border-0 my-1" />
             {/* <p className="text-base md:text-xl font-medium leading-relaxed p-2">
               Elevating everyday elegance into extraordinary statements, one meticulously curated look at a time.
             </p> */}
-           
             <div className="flex items-center gap-2 mt-1 mb-4">
-              {/* <span className="font-medium text-lg">Embrace Your Inner Winston</span> */}
-              <a href="https://www.instagram.com/p/DHYA1N2xzxx/" target="_blank" className="group">
-                <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
-                  <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
-                </span>
-              </a>
+              {/* <span className="font-medium text-lg">Shine Like Perfora!</span> */}
+             <a href="https://www.instagram.com/reel/DCOD2g0yzrh/" target="_blank" rel="noopener noreferrer" className="group">
+               <span className="inline-flex items-center justify-center bg-white rounded-md p-1 sm:p-1.5 shadow-md">
+                 <Instagram className="w-7 h-7 sm:w-8 sm:h-8 text-neutral-700 transition-transform duration-200 group-hover:scale-125" />
+               </span>
+             </a>
+              
             </div>
+            
           </div>
 
           {/* Bunny Image */}
