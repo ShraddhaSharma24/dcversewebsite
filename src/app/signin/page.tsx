@@ -1,6 +1,8 @@
 import { FC } from "react";
 import Image from "next/image";
 
+
+
 const SignIn: FC = () => {
   return (
     <div className="flex h-screen text-white bg-black">
@@ -27,8 +29,8 @@ const SignIn: FC = () => {
               height={40}
               className=" mb-4"
             />
-            <h1 className="text-4xl font-bold text-white mb-1 font-['Space_Mono']">
-              Dcverse
+           <h1 className="text-4xl text-white mb-1 font-mono">
+            Dcverse
             </h1>
           </div>
 

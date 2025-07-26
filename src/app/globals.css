@@ -124,3 +124,15 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  font-family: "Courier New", monospace;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
