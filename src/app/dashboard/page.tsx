@@ -1,24 +1,26 @@
 import Navbar from "@/app/components/Navbar";
 import ToolCard from "@/app/components/ToolCard";
 import Image from "next/image";
-import GridBox from "@/app/components/grid";
 import Link from "next/link";
+import ThreeWall3DBackground from "@/app/components/ThreeDGridBackground";
+import Divider from "../components/divider";
 
 export default function Home() {
   return (
     <div className="relative h-full bg-black text-white">
-        <div className="sticky top-0">
-            <Navbar/>
-        </div>
+      <div className="sticky top-0 z-50">
+        <Navbar />
+      </div>
+
       {/* Tools Section */}
       <section className="px-6 py-10">
         <div className="flex flex-row gap-30">
-        <h2 className="text-2xl mb-6 text-white ml-20 text-center align-left pt-20">All Tools:</h2>
-        <div className="flex gap-15">
-          <ToolCard title="AI TRY ON" />
-          <ToolCard title="AI PHOTOGRAPHY" />
-          <ToolCard title="AI INFLUENCERS" />
-        </div>
+          <h2 className="text-2xl mb-6 text-white ml-20 text-center align-left pt-20">All Tools:</h2>
+          <div className="flex gap-15">
+            <ToolCard title="AI TRY ON" />
+            <ToolCard title="AI PHOTOGRAPHY" />
+            <ToolCard title="AI INFLUENCERS" />
+          </div>
         </div>
 
         <div className="grid grid-cols-2 gap-4 mt-10 ml-10">
@@ -28,25 +30,43 @@ export default function Home() {
       </section>
 
       {/* Grid Section */}
-      <section className="px-6 py-10">
-      <GridBox />
-       <div className="w-full overflow-x-auto hide-scrollbar">
-        <div className="grid grid-flow-col auto-cols-max gap-4 ">
+      <section className="px-6 py-10 relative">
+        <Divider id="divider2"/>
+        <ThreeWall3DBackground startId="divider2" endId="divider3" />
+        <div className="text-center text-3xl font-bold mb-8 mx-4 mt-8 sm:mx-[10%] lg:mx-[20%] border bg-black border-white py-6">
+          <div>
+            <br/>
+            <br/>
+            Lorem Ipsum
+            <br/><br/>
+          </div>
+          <div>
+            <br/>
+          </div>
+        </div>
+
+   
+      <Divider id="divider3"/>
+        {/* Cards (outside 3D background) */}
+        <div className="relative z-10 w-full overflow-x-auto hide-scrollbar mt-8">
+          <div className="grid grid-flow-col auto-cols-max gap-4">
             {[...Array(10)].map((_, i) => (
-            <Image
+              <Image
                 key={i}
                 src="/image.png"
                 width={300}
                 height={200}
                 alt="Thumb"
                 className="rounded"
-            />
+              />
             ))}
-        </div>
+          </div>
         </div>
 
         <div className="flex justify-center mt-6">
-          <button className="px-4 py-3 bg-[#EADDFE] rounded-md text-[#4F378A] font-bold">Generate Now</button>
+          <button className="px-4 py-3 bg-[#EADDFE] rounded-md text-[#4F378A] font-bold">
+            Generate Now
+          </button>
         </div>
       </section>
     </div>
