@@ -60,7 +60,7 @@ export default function ModelControl({ id }: ModelProps) {
           <hr className="border border-white" />
           <div className="flex flex-1">
             <div className="w-5/7 p-4 sm:p-6 text-white">
-              <p className="text-lg sm:text-xl md:text-2xl space-y-2 sm:space-y-4">
+              <p className="text-lg sm:text-xl md:text-2xl space-y-2 sm:space-y-4 font-sans">
                 → Clone yourself. <br/><br/>
                 → Control Pose and Expressions as per the guidelines.<br/><br/>
                 → Create exceptional results from Prompts

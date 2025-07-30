@@ -14,7 +14,7 @@ function Footer({ id }: FooterProps) {
             {/* Content Creation */}
             <div className="text-left space-y-2">
               <h3 className="font-semibold text-base sm:text-lg">Content Creation</h3>
-              <ul className="text-gray-400 space-y-1 text-xs sm:text-sm">
+              <ul className="text-gray-400 space-y-1 text-xs sm:text-sm font-sans">
                 <li>AI UGC Generator</li>
                 <li>AI Audio Tool</li>
                 <li>Speech to Speech</li>
@@ -24,7 +24,7 @@ function Footer({ id }: FooterProps) {
             {/* Advertisement */}
             <div className="text-left space-y-2">
               <h3 className="font-semibold text-base sm:text-lg">Advertisement</h3>
-              <ul className="text-gray-400 space-y-1 text-xs sm:text-sm">
+              <ul className="text-gray-400 space-y-1 text-xs sm:text-sm font-sans">
                 <li>AI Facebook Ad Generator</li>
                 <li>AI Audio Ad Generator</li>
                 <li>AI Product Video Generator</li>
@@ -34,7 +34,7 @@ function Footer({ id }: FooterProps) {
             {/* Solutions */}
             <div className="text-left space-y-2">
               <h3 className="font-semibold text-base sm:text-lg">Solutions</h3>
-              <ul className="text-gray-400 space-y-1 text-xs sm:text-sm">
+              <ul className="text-gray-400 space-y-1 text-xs sm:text-sm font-sans">
                 <li>Batch Creations</li>
                 <li>AI Ads</li>
                 <li>AI Shorts</li>
@@ -53,7 +53,7 @@ function Footer({ id }: FooterProps) {
           <div className="bg-white/10 backdrop-blur-lg rounded-xl md:rounded-2xl border-white/30 border-2 px-4 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-medium text-center shadow">
           Mumbai and Delhi
           </div>
-          <div className="bg-white/10 backdrop-blur-lg rounded-xl md:rounded-2xl border-white/30 border-2 px-4 sm:px-6 py-3 sm:py-4 text-center shadow">
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl md:rounded-2xl border-white/30 border-2 font-sans px-4 sm:px-6 py-3 sm:py-4 text-center shadow">
             <p className="font-semibold text-sm sm:text-base mb-1">Career<br />Get Update</p>
             <p className="text-xs sm:text-sm text-gray-400">Privacy Policy</p>
             <p className="text-xs sm:text-sm text-gray-400">Imprint</p>

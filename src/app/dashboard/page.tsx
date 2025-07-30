@@ -17,9 +17,10 @@ export default function Home() {
         <div className="flex flex-row gap-30">
           <h2 className="text-2xl mb-6 text-white ml-20 text-center align-left pt-20">All Tools:</h2>
           <div className="flex gap-15">
-            <ToolCard title="AI TRY ON" />
-            <ToolCard title="AI PHOTOGRAPHY" />
-            <ToolCard title="AI INFLUENCERS" />
+           <ToolCard title="AI Influencer" imageSrc="/AI-Influencer.png" />
+            <ToolCard title="AI Photo" imageSrc="/AI-Photo.png" />
+            <ToolCard title="AI Try On" imageSrc="/AI-TryOn.png" />
+
           </div>
         </div>
 

@@ -112,7 +112,7 @@ export default function RealisticSkinAd({ id }: SkinProps) {
           
           <div className="flex flex-1">
             <div className="w-5/7 p-4 sm:p-6 text-white">
-              <p className="text-lg sm:text-xl md:text-2xl">
+              <p className="text-lg sm:text-xl md:text-2xl font-sans">
                 Skip the boring AI plastic skins and connect with your target audience on a personal level, with our crafted tool. Perfect for Cosmetics and Skincare brands.
               </p>
             </div>

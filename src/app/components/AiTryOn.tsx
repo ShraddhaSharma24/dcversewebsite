@@ -78,7 +78,7 @@ export default function AiTryOn() {
 
             {/* Bullet Points Section */}
             <div className="w-3/4 p-4 sm:p-6 text-white">
-              <div className="text-lg sm:text-xl md:text-2xl lg:text-2xl space-y-2 sm:space-y-4">
+              <div className="text-lg sm:text-xl md:text-2xl lg:text-2xl space-y-2 sm:space-y-4 font-sans">
                 <div>→ Ultra-realistic try-on experiences</div>
                 <div>→ Supports beauty, eyewear, fashion</div>
                 <div>→ Reduce Production Cost, Perfect for PDPs</div>

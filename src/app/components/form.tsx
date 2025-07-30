@@ -73,7 +73,7 @@ function Form({ id }: FormProps) {
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-3 md:mb-4 font-poppins md:mt-6 lg:mt-10">
           Take Your Brand to the Next Level
         </h1>
-        <p className="mb-4 md:mb-6 max-w-md text-white font-poppins text-sm sm:text-base md:text-lg lg:text-xl">
+        <p className="mb-4 md:mb-6 max-w-md text-white font-poppins text-sm sm:text-base md:text-lg lg:text-xl font-sans">
           Join the future of digital marketing with AI-powered content creation and virtual influencers.
         </p>
       </div>

@@ -56,8 +56,8 @@ export default function ThreeWall3DBackground({ startId, endId }: ThreeWall3DBac
           transform: "perspective(900px) rotateY(14deg)",
         }}
       >
-        {generateGridLines("vertical", "rgba(128,128,128,0.4)",6)}
-        {generateGridLines("horizontal", "rgba(128,128,128,0.4)", 12)}
+        {generateGridLines("vertical", "#59554B",6)}
+        {generateGridLines("horizontal", "#59554B", 12)}
       </div>
 
       {/* Right wall - reduced angle from -40deg to -30deg */}

@@ -70,7 +70,7 @@ function Features() {
               </h2>
             </div>
 
-            <p className="text-gray-400 text-sm sm:text-base mb-2 group-hover:text-gray-200 transition-all">
+            <p className="text-gray-400 text-sm sm:text-base mb-2 group-hover:text-gray-200 transition-all font-sans">
               {item.description}
             </p>
 
