@@ -10,7 +10,7 @@ import StoryboardGeneration from '@/app/components/StoryboardGeneration';
 import VideoModelSelection from '@/app/components/VideoModelSelection';
 import Footer from '@/app/components/Footer-profile';
 
-export default function NeoRetroCreator() {
+export default function ScriptGenerate() {
   const [selectedAvatar, setSelectedAvatar] = useState<Avatar | null>({
     id: '1',
     name: 'Salman Khan',

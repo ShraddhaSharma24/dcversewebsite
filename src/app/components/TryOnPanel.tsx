@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { FiUpload, FiThumbsUp, FiThumbsDown, FiDownload, FiStar } from "react-icons/fi";
 import { FiUploadCloud } from "react-icons/fi";
+import { FiInfo } from "react-icons/fi";
+
 
 export default function TryOnPanel() {
   const [prompt, setPrompt] = useState("");
@@ -34,6 +36,7 @@ export default function TryOnPanel() {
       <div className="flex flex-1">
         {/* Left Panel */}
         <div className="relative w-[20%] bg-[#1d1d1d] p-4 border-r border-white font-mono flex flex-col h-screen">
+          
           {/* Virtual Models */}
           <p className="text-xs text-white mb-2">Virtual Model</p>
          <div className="grid grid-cols-3 gap-x-4 gap-y-2 mb-6">
@@ -43,34 +46,46 @@ export default function TryOnPanel() {
             </div>
 
 
-          {/* Garment Upload */}
-          <p className="text-xs text-white mb-1">Garment</p>
-          <div
-            onClick={handleUploadClick}
-            className="border-2 border-2 border-whiet rounded-lg py-12 h-20 flex justify-center items-center mb-4 cursor-pointer text-white text-xs relative overflow-hidden mb-4"
-          >
-            {previewUrl ? (
-              <img
-                src={previewUrl}
-                alt="Uploaded Garment"
-                className="object-cover w-full h-full"
-              />
-            ) : (
-              <>
-              <div className="flex flex-col items-center gap-3 mt-10 mb-7">
-                <FiUploadCloud size={22} className="mr-1" />
-                Upload Garment
-                </div>
-              </>
-            )}
-            <input
-              type="file"
-              accept="image/*"
-              id="garment-upload"
-              className="hidden"
-              onChange={handleFileChange}
-            />
-          </div>
+     {/* Garment Upload */}
+<div className="flex items-start mb-4 gap-2">
+  {/* Upload Box */}
+  <div
+    onClick={handleUploadClick}
+    className="border-2 border-white rounded-lg py-12 h-20 w-full flex justify-center items-center cursor-pointer text-white text-xs relative overflow-hidden"
+  >
+    {previewUrl ? (
+      <img
+        src={previewUrl}
+        alt="Uploaded Garment"
+        className="object-cover w-full h-full"
+      />
+    ) : (
+      <div className="flex flex-col items-center gap-3 mt-10 mb-7">
+        <FiUploadCloud size={22} className="mr-1" />
+        Upload Garment
+      </div>
+    )}
+    <input
+      type="file"
+      accept="image/*"
+      id="garment-upload"
+      className="hidden"
+      onChange={handleFileChange}
+    />
+  </div>
+
+  {/* Guidelines Icon with Tooltip */}
+  <div className="relative group mt-1">
+    <FiInfo className="text-white cursor-pointer" size={16} />
+    <div className="absolute z-10 hidden group-hover:block left-6 top-0 w-64 text-xs text-white bg-black border border-gray-400 p-3 rounded shadow-lg">
+      <strong>Motion Control</strong><br />
+      Apply specific motions to characters in the image.<br /><br />
+      <strong>Motion Capture</strong><br />
+      Upload motion data to animate the avatar accurately.
+    </div>
+  </div>
+</div>
+
 
           {/* Prompt */}
           <p className="text-xs text-white mb-2">Prompt</p>
