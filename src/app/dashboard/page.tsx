@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ThreeWall3DBackground from "@/app/components/ThreeDGridBackground";
 import Divider from "../components/divider";
+import Grid from "../components/grid";
 
 export default function Home() {
   return (
@@ -31,23 +32,8 @@ export default function Home() {
       </section>
 
       {/* Grid Section */}
-      <section className="px-6 py-10 relative">
-        <Divider id="divider2"/>
-        <ThreeWall3DBackground startId="divider2" endId="divider3" />
-        <div className="text-center text-3xl font-bold mb-8 mx-4 mt-8 sm:mx-[10%] lg:mx-[20%] border bg-black border-white py-6">
-          <div>
-            <br/>
-            <br/>
-            Lorem Ipsum
-            <br/><br/>
-          </div>
-          <div>
-            <br/>
-          </div>
-        </div>
-
-   
-      <Divider id="divider3"/>
+      <Grid/>
+      <section>
         {/* Cards (outside 3D background) */}
         <div className="relative z-10 w-full overflow-x-auto hide-scrollbar mt-8">
           <div className="grid grid-flow-col auto-cols-max gap-4">
