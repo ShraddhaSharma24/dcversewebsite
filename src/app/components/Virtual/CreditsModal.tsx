@@ -6,15 +6,14 @@ export default function CreditsModal({ show, onClose }: { show: boolean; onClose
 
   return (
     <div className="fixed z-50 inset-0 overflow-y-auto">
-      <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div className="flex items-center justify-center min-h-screen p-4 text-center">
         <div className="fixed inset-0 transition-opacity" aria-hidden="true">
           <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
         </div>
-        <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-        <div className="inline-block align-bottom bg-[#1d1d1d] rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full border border-gray-700">
+        <div className="inline-block align-bottom bg-[#1d1d1d] rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg w-full border border-gray-700">
           <div className="bg-[#1d1d1d] px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
             <div className="sm:flex sm:items-start">
-              <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-orange-100 sm:mx-0 sm:h-10 sm:w-10">
+              <div className="mx-auto flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-full bg-orange-100 sm:mx-0 sm:h-10 sm:w-10">
                 <FontAwesomeIcon icon={faCoins} className="text-orange-500" />
               </div>
               <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
@@ -24,7 +23,7 @@ export default function CreditsModal({ show, onClose }: { show: boolean; onClose
                 </div>
               </div>
             </div>
-            <div className="mt-6 grid grid-cols-1 gap-4">
+            <div className="mt-4 grid grid-cols-1 gap-3">
               {[
                 { 
                   name: "Starter Plan", 
@@ -48,13 +47,13 @@ export default function CreditsModal({ show, onClose }: { show: boolean; onClose
               ].map((plan, index) => (
                 <div 
                   key={index} 
-                  className={`border ${plan.popular ? 'border-purple-500 bg-[#1d1d1d]' : 'border-gray-600'} rounded-lg p-4`}
+                  className={`border ${plan.popular ? 'border-purple-500 bg-[#1d1d1d]' : 'border-gray-600'} rounded-lg p-3`}
                 >
-                  <h4 className="font-medium text-lg text-white">{plan.name}</h4>
-                  <p className="text-gray-400">{plan.description}</p>
-                  <p className="text-purple-400 font-bold text-xl mt-2">{plan.price}</p>
+                  <h4 className="font-medium text-base md:text-lg text-white">{plan.name}</h4>
+                  <p className="text-gray-400 text-sm">{plan.description}</p>
+                  <p className="text-purple-400 font-bold text-lg md:text-xl mt-1 md:mt-2">{plan.price}</p>
                   <button 
-                    className={`mt-3 w-full text-white py-2 px-4 rounded-md text-sm font-medium ${plan.color}`}
+                    className={`mt-2 w-full text-white py-1.5 px-4 rounded-md text-sm font-medium ${plan.color}`}
                   >
                     Choose Plan
                   </button>
@@ -65,7 +64,7 @@ export default function CreditsModal({ show, onClose }: { show: boolean; onClose
           <div className="bg-[#1d1d1d] px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
             <button 
               type="button" 
-              className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-600 shadow-sm px-4 py-2 bg-[#1d1d1d] text-base font-medium text-white hover:bg-[#1d1d1d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+              className="w-full sm:w-auto inline-flex justify-center rounded-md border border-gray-600 shadow-sm px-4 py-2 bg-[#1d1d1d] text-sm font-medium text-white hover:bg-[#1d1d1d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:ml-3"
               onClick={onClose}
             >
               Maybe Later
