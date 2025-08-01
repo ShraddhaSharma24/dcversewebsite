@@ -8,6 +8,7 @@ export default function TryOnPanel() {
   const [prompt, setPrompt] = useState("");
   const [uploadedFile, setUploadedFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
+  const [garmentType, setGarmentType] = useState("select"); 
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -81,6 +82,22 @@ export default function TryOnPanel() {
                 onChange={handleFileChange}
               />
             </div>
+          </div>
+
+          {/* Garment Type Dropdown */}
+          <div className="mb-4">
+            <p className="text-xs text-white mb-2">Garment Type</p>
+            <select
+              value={garmentType}
+              onChange={(e) => setGarmentType(e.target.value)}
+              className="w-full bg-[#1d1d1d] border border-white text-xs rounded-sm pb-2 pl-2 pt-1 text-white"
+            >
+              <option value="select">Select Garment Type</option>
+              <option value="top">Top</option>
+              <option value="bottom">Bottom</option>
+              <option value="full sleeves">Full Sleeves</option>
+              <option value="dress">Dress</option>
+            </select>
           </div>
 
           {/* Prompt */}
