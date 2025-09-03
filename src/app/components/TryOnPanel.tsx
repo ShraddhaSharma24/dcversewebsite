@@ -83,6 +83,7 @@ export default function TryOnPanel() {
     }
 
     setIsLoading(true);
+console.log(process.env.NEXT_PUBLIC_API_BASE);
 
     try {
       const formData = new FormData();
